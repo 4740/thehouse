@@ -8,6 +8,13 @@
   /* intro - END */
 
 }
+
+button,
+select,
+div {
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0)!important; 
+}
+
 #intro .head {
   width: 343px;
   height: 460px;
@@ -361,7 +368,6 @@
   top: 10px;
   cursor: pointer;
   /* close - END */
-
 }
 #picker #results #close div {
   width: 1px;
@@ -4600,13 +4606,16 @@ body,
 }
 #options li {
   padding-left: 20px;
-  background: url(../images/li.gif) no-repeat 0 12px;
+  margin: 10px;
   cursor: pointer;
   -moz-transition: 'color' 0.5s linear;
   -webkit-transition: 'color' 0.5s linear;
   -o-transition: 'color' 0.5s linear;
   -ms-transition: 'color' 0.5s linear;
   transition: 'color' 0.5s linear;
+  border-radius: 2px;
+  border: solid;
+  border-color:DodgerBlue;
 }
 #options li:hover {
   color: #bce9f4;
@@ -4831,7 +4840,7 @@ body,
   transition: opacity 0.2s linear;
   height: 64px;
   top: 10px;
-  right: 10px;
+  right: 100px;
   background-position: -360px 0;
 }
 .close:hover {
@@ -4881,7 +4890,7 @@ body,
   background-position: -240px -32px;
 }
 #items {
-  font: 20px/30px 'Neuton', georgia, serif;
+  font: 60px 'Neuton', georgia, serif!important;
   text-align: center;
   color: #fefefe;
   width: 100%;
@@ -4896,29 +4905,32 @@ body,
 
 }
 #items #button {
-  width: 120px;
-  height: 32px;
-  z-index: 9999;
+  width: 125px;
+  height: 70px;
+  z-index: -1;
   opacity: .8;
   cursor: pointer;
   border-radius: 5px;
-  background: rgba(0, 0, 0, 0.8) url(../images/menu.png) no-repeat;
+  background: url("../images/down-arrow.png") no-repeat;
   -moz-transition: opacity 0.2s linear;
   -webkit-transition: opacity 0.2s linear;
   -o-transition: opacity 0.2s linear;
   -ms-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
-  margin: 0 0 0 -60px;
+  margin: 0 0 0 -30px;
   position: absolute;
   left: 50%;
   top: 111px;
-  background-position: -120px 0;
 }
 #items #button:hover {
   opacity: 1;
 }
 #items #button.up {
+  width: 70px;
+  height: 70px;
+  margin: 0 0 0 -30px;
   background-position: -120px -32px;
+  background: url("../images/cross-out.png") no-repeat;
 }
 #items img {
   cursor: pointer;
